@@ -10,19 +10,28 @@
 <body>
     <h1>Simple calculator</h1>
 
-    <div>
-        <input type="number" class="js-teksts1">
-        <button class="js-plus">Plus</button>
-        <button class="js-minus">Minus</button>
-        <button class="js-multiply">Multiply</button>
-        <button class="js-divide">Divide</button>
-        <input type="number" class="js-teksts2">
+    <div class="action_container">
+        <input type="number" class="js-teksts1 inputField"  
+        placeholder="First number">
+        <button class="js-plus">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19 12.998h-6v6h-2v-6H5v-2h6v-6h2v6h6z"/></svg>
+        </button>
+        <button class="js-minus">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19 12.998H5v-2h14z"/></svg>
+        </button>
+        <button class="js-multiply">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"/></svg>
+        </button>
+        <button class="js-divide">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M5 11h14v2H5zm7.002-7a2 2 0 1 0-.004 4a2 2 0 0 0 .004-4zm0 12a2 2 0 1 0-.004 4a2 2 0 0 0 .004-4z"/></svg>
+        </button>
+        <input type="number" class="js-teksts2 inputField" placeholder="Second number">
     </div>
     
-    <div>
-        <img src="pusheen.png" alt="pusheen">
-        <p class="js-result"></p>
+    <div class="result_container">
+        <img src="pusheen.png" alt="pusheen" class="image">
+        <p class="result_text js-result"></p>
     </div>
 </body>
 <script src="script.js"></script>
-</html
+</html>
